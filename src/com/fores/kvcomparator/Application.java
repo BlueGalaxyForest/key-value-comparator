@@ -5,14 +5,12 @@ import java.util.List;
 public class Application {
     public static void main(String[] args) {
         FileKeyValueComparator fileKeyValueComparator = new FileKeyValueComparator();
-        String path1 = "H:\\Test\\Jar\\KeyValueComparator\\files\\PC.txt";
-        String path2 = "H:\\Test\\Jar\\KeyValueComparator\\files\\小程序.txt";
-        fileKeyValueComparator.compare(path1,path2,"PC","小程序");
+        ResponseKeyValueComparator responseKeyValueComparator = new ResponseKeyValueComparator();
 
-//        List<String> lines = fileKeyValueComparator.readFile("H:\\Test\\Jar\\KeyValueComparator\\files\\PC.txt");
-//        lines.stream().forEach(line->{
-//            System.out.println("->"+line);
-//        });
+        String path1 = "C:\\Users\\Administrator\\Desktop\\GitHub项目\\key-value-comparator\\files\\PC.txt";
+        String path2 = "C:\\Users\\Administrator\\Desktop\\GitHub项目\\key-value-comparator\\files\\小程序.txt";
+        fileKeyValueComparator.compare(path1,path2,"PC的直接提交","小程序的直接提交");
+//        responseKeyValueComparator.compare(path1,path2,"58459案件","176699案件");
 
     }
 }

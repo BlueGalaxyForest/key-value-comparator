@@ -1,0 +1,831 @@
+{
+  "StatusCode": 200,
+  "code": 0,
+  "data": {
+    "ClientIdentity": [
+      {
+        "cId": 32,
+        "itemName": "委托人 "
+      },
+      {
+        "cId": 31,
+        "itemName": "委托当事人 "
+      },
+      {
+        "cId": 22,
+        "itemName": "利害关系人"
+      }
+    ],
+    "PartyIdentity": [
+      {
+        "pId": 54,
+        "itemName": "原告"
+      },
+      {
+        "pId": 2,
+        "itemName": "被告"
+      },
+      {
+        "pId": 16,
+        "itemName": "第三人"
+      },
+      {
+        "pId": 55,
+        "itemName": "原告（反诉被告）"
+      },
+      {
+        "pId": 3,
+        "itemName": "被告（反诉原告）"
+      },
+      {
+        "pId": 37,
+        "itemName": "申请人"
+      },
+      {
+        "pId": 9,
+        "itemName": "被申请人"
+      },
+      {
+        "pId": 39,
+        "itemName": "申诉人"
+      },
+      {
+        "pId": 11,
+        "itemName": "被申诉人"
+      },
+      {
+        "pId": 64,
+        "itemName": "执行申请人"
+      },
+      {
+        "pId": 63,
+        "itemName": "执行被申请人"
+      },
+      {
+        "pId": 36,
+        "itemName": "上诉人"
+      },
+      {
+        "pId": 8,
+        "itemName": "被上诉人"
+      },
+      {
+        "pId": 5,
+        "itemName": "被害人"
+      },
+      {
+        "pId": 58,
+        "itemName": "再审申请人"
+      },
+      {
+        "pId": 32,
+        "itemName": "其它"
+      },
+      {
+        "pId": 57,
+        "itemName": "再审被申请人 "
+      },
+      {
+        "pId": 52,
+        "itemName": "一审原告 "
+      },
+      {
+        "pId": 51,
+        "itemName": "一审被告 "
+      },
+      {
+        "pId": 7,
+        "itemName": "被侵权人"
+      },
+      {
+        "pId": 35,
+        "itemName": "权利人"
+      },
+      {
+        "pId": 62,
+        "itemName": "债务人"
+      },
+      {
+        "pId": 60,
+        "itemName": "债权人"
+      },
+      {
+        "pId": 31,
+        "itemName": "利害关系人"
+      }
+    ],
+    "ChargingMethod": [
+      {
+        "cmId": 5,
+        "chargingMethod": "计件收费"
+      },
+      {
+        "cmId": 2,
+        "chargingMethod": "风险收费"
+      },
+      {
+        "cmId": 3,
+        "chargingMethod": "计时收费"
+      },
+      {
+        "cmId": 4,
+        "chargingMethod": "混合收费"
+      },
+      {
+        "cmId": 1,
+        "chargingMethod": "比例收费"
+      },
+      {
+        "cmId": 6,
+        "chargingMethod": "免费"
+      },
+      {
+        "cmId": 7,
+        "chargingMethod": "未定"
+      }
+    ],
+    "StageAndMatters": [
+      {
+        "emId": 37,
+        "emName": "发律师函",
+        "tsId": 1,
+        "stageId": 81,
+        "stName": "诉仲前"
+      },
+      {
+        "emId": 34,
+        "emName": "调解",
+        "tsId": 1,
+        "stageId": 81,
+        "stName": "诉仲前"
+      },
+      {
+        "emId": 122,
+        "emName": "制作文书",
+        "tsId": 1,
+        "stageId": 81,
+        "stName": "诉仲前"
+      },
+      {
+        "emId": 90,
+        "emName": "收集证据",
+        "tsId": 1,
+        "stageId": 81,
+        "stName": "诉仲前"
+      },
+      {
+        "emId": 47,
+        "emName": "立案",
+        "tsId": 1,
+        "stageId": 81,
+        "stName": "诉仲前"
+      },
+      {
+        "emId": 23,
+        "emName": "代理调解",
+        "tsId": 2,
+        "stageId": 95,
+        "stName": "仲裁"
+      },
+      {
+        "emId": 37,
+        "emName": "发律师函",
+        "tsId": 2,
+        "stageId": 95,
+        "stName": "仲裁"
+      },
+      {
+        "emId": 74,
+        "emName": "申请立案",
+        "tsId": 2,
+        "stageId": 95,
+        "stName": "仲裁"
+      },
+      {
+        "emId": 27,
+        "emName": "代理庭审应诉",
+        "tsId": 2,
+        "stageId": 95,
+        "stName": "仲裁"
+      },
+      {
+        "emId": 87,
+        "emName": "事项申请",
+        "tsId": 2,
+        "stageId": 95,
+        "stName": "仲裁"
+      },
+      {
+        "emId": 92,
+        "emName": "诉前调解",
+        "tsId": 3,
+        "stageId": 87,
+        "stName": "一审"
+      },
+      {
+        "emId": 37,
+        "emName": "发律师函",
+        "tsId": 3,
+        "stageId": 87,
+        "stName": "一审"
+      },
+      {
+        "emId": 47,
+        "emName": "立案",
+        "tsId": 3,
+        "stageId": 87,
+        "stName": "一审"
+      },
+      {
+        "emId": 106,
+        "emName": "庭审代理",
+        "tsId": 3,
+        "stageId": 87,
+        "stName": "一审"
+      },
+      {
+        "emId": 93,
+        "emName": "诉讼调解",
+        "tsId": 3,
+        "stageId": 87,
+        "stName": "一审"
+      },
+      {
+        "emId": 37,
+        "emName": "发律师函",
+        "tsId": 4,
+        "stageId": 15,
+        "stName": "二审"
+      },
+      {
+        "emId": 47,
+        "emName": "立案",
+        "tsId": 4,
+        "stageId": 15,
+        "stName": "二审"
+      },
+      {
+        "emId": 104,
+        "emName": "庭审（调查）",
+        "tsId": 4,
+        "stageId": 15,
+        "stName": "二审"
+      },
+      {
+        "emId": 93,
+        "emName": "诉讼调解",
+        "tsId": 4,
+        "stageId": 15,
+        "stName": "二审"
+      },
+      {
+        "emId": 74,
+        "emName": "申请立案",
+        "tsId": 5,
+        "stageId": 93,
+        "stName": "执行"
+      },
+      {
+        "emId": 114,
+        "emName": "执行代理",
+        "tsId": 5,
+        "stageId": 93,
+        "stName": "执行"
+      },
+      {
+        "emId": 29,
+        "emName": "代收款项",
+        "tsId": 5,
+        "stageId": 93,
+        "stName": "执行"
+      },
+      {
+        "emId": 36,
+        "emName": "督促履行",
+        "tsId": 5,
+        "stageId": 93,
+        "stName": "执行"
+      },
+      {
+        "emId": 103,
+        "emName": "听证代理",
+        "tsId": 5,
+        "stageId": 93,
+        "stName": "执行"
+      },
+      {
+        "emId": 113,
+        "emName": "异议申请",
+        "tsId": 5,
+        "stageId": 93,
+        "stName": "执行"
+      },
+      {
+        "emId": 81,
+        "emName": "申请再审立案",
+        "tsId": 6,
+        "stageId": 89,
+        "stName": "再审申请"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 6,
+        "stageId": 89,
+        "stName": "再审申请"
+      },
+      {
+        "emId": 27,
+        "emName": "代理庭审应诉",
+        "tsId": 6,
+        "stageId": 89,
+        "stName": "再审申请"
+      },
+      {
+        "emId": 120,
+        "emName": "制作诉讼文书和证据材料",
+        "tsId": 6,
+        "stageId": 89,
+        "stName": "再审申请"
+      },
+      {
+        "emId": 73,
+        "emName": "申请抗诉立案",
+        "tsId": 7,
+        "stageId": 31,
+        "stName": "抗诉申请"
+      },
+      {
+        "emId": 88,
+        "emName": "收集/调取证据",
+        "tsId": 7,
+        "stageId": 31,
+        "stName": "抗诉申请"
+      },
+      {
+        "emId": 118,
+        "emName": "制作抗诉文书和证据材料",
+        "tsId": 7,
+        "stageId": 31,
+        "stName": "抗诉申请"
+      },
+      {
+        "emId": 97,
+        "emName": "提交抗诉文书和证据材料",
+        "tsId": 7,
+        "stageId": 31,
+        "stName": "抗诉申请"
+      },
+      {
+        "emId": 22,
+        "emName": "代理案件调查",
+        "tsId": 7,
+        "stageId": 31,
+        "stName": "抗诉申请"
+      },
+      {
+        "emId": 37,
+        "emName": "发律师函",
+        "tsId": 8,
+        "stageId": 2,
+        "stName": "裁决承认与执行"
+      },
+      {
+        "emId": 47,
+        "emName": "立案",
+        "tsId": 8,
+        "stageId": 2,
+        "stName": "裁决承认与执行"
+      },
+      {
+        "emId": 74,
+        "emName": "申请立案",
+        "tsId": 9,
+        "stageId": 8,
+        "stName": "撤销裁决（一审）"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 9,
+        "stageId": 8,
+        "stName": "撤销裁决（一审）"
+      },
+      {
+        "emId": 119,
+        "emName": "制作诉讼文书材料",
+        "tsId": 9,
+        "stageId": 8,
+        "stName": "撤销裁决（一审）"
+      },
+      {
+        "emId": 27,
+        "emName": "代理庭审应诉",
+        "tsId": 9,
+        "stageId": 8,
+        "stName": "撤销裁决（一审）"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 10,
+        "stageId": 7,
+        "stName": "撤销裁决（二审）"
+      },
+      {
+        "emId": 119,
+        "emName": "制作诉讼文书材料",
+        "tsId": 10,
+        "stageId": 7,
+        "stName": "撤销裁决（二审）"
+      },
+      {
+        "emId": 98,
+        "emName": "提交上诉状和证据材料",
+        "tsId": 10,
+        "stageId": 7,
+        "stName": "撤销裁决（二审）"
+      },
+      {
+        "emId": 27,
+        "emName": "代理庭审应诉",
+        "tsId": 10,
+        "stageId": 7,
+        "stName": "撤销裁决（二审）"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 11,
+        "stageId": 92,
+        "stName": "支付令"
+      },
+      {
+        "emId": 120,
+        "emName": "制作诉讼文书和证据材料",
+        "tsId": 11,
+        "stageId": 92,
+        "stName": "支付令"
+      },
+      {
+        "emId": 74,
+        "emName": "申请立案",
+        "tsId": 11,
+        "stageId": 92,
+        "stName": "支付令"
+      },
+      {
+        "emId": 24,
+        "emName": "代理和解/调解",
+        "tsId": 11,
+        "stageId": 92,
+        "stName": "支付令"
+      },
+      {
+        "emId": 27,
+        "emName": "代理庭审应诉",
+        "tsId": 11,
+        "stageId": 92,
+        "stName": "支付令"
+      },
+      {
+        "emId": 15,
+        "emName": "出具律师函",
+        "tsId": 11,
+        "stageId": 92,
+        "stName": "支付令"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 12,
+        "stageId": 25,
+        "stName": "公示催告"
+      },
+      {
+        "emId": 120,
+        "emName": "制作诉讼文书和证据材料",
+        "tsId": 12,
+        "stageId": 25,
+        "stName": "公示催告"
+      },
+      {
+        "emId": 74,
+        "emName": "申请立案",
+        "tsId": 12,
+        "stageId": 25,
+        "stName": "公示催告"
+      },
+      {
+        "emId": 24,
+        "emName": "代理和解/调解",
+        "tsId": 12,
+        "stageId": 25,
+        "stName": "公示催告"
+      },
+      {
+        "emId": 27,
+        "emName": "代理庭审应诉",
+        "tsId": 12,
+        "stageId": 25,
+        "stName": "公示催告"
+      },
+      {
+        "emId": 15,
+        "emName": "出具律师函",
+        "tsId": 12,
+        "stageId": 25,
+        "stName": "公示催告"
+      },
+      {
+        "emId": 75,
+        "emName": "申请破产",
+        "tsId": 13,
+        "stageId": 46,
+        "stName": "破产"
+      },
+      {
+        "emId": 62,
+        "emName": "申报债权",
+        "tsId": 13,
+        "stageId": 46,
+        "stName": "破产"
+      },
+      {
+        "emId": 6,
+        "emName": "参加债权人会议",
+        "tsId": 13,
+        "stageId": 46,
+        "stName": "破产"
+      },
+      {
+        "emId": 31,
+        "emName": "担任管理人",
+        "tsId": 13,
+        "stageId": 46,
+        "stName": "破产"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 14,
+        "stageId": 22,
+        "stName": "反诉"
+      },
+      {
+        "emId": 117,
+        "emName": "制作反诉文书材料",
+        "tsId": 14,
+        "stageId": 22,
+        "stName": "反诉"
+      },
+      {
+        "emId": 69,
+        "emName": "申请反诉立案",
+        "tsId": 14,
+        "stageId": 22,
+        "stName": "反诉"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 15,
+        "stageId": 21,
+        "stName": "反请求"
+      },
+      {
+        "emId": 116,
+        "emName": "制作反请求文书材料",
+        "tsId": 15,
+        "stageId": 21,
+        "stName": "反请求"
+      },
+      {
+        "emId": 68,
+        "emName": "申请反请求立案",
+        "tsId": 15,
+        "stageId": 21,
+        "stName": "反请求"
+      },
+      {
+        "emId": 89,
+        "emName": "收集/调取证据材料",
+        "tsId": 16,
+        "stageId": 29,
+        "stName": "检察监督"
+      },
+      {
+        "emId": 123,
+        "emName": "制作文书和证据材料",
+        "tsId": 16,
+        "stageId": 29,
+        "stName": "检察监督"
+      },
+      {
+        "emId": 101,
+        "emName": "提交文书和证据材料",
+        "tsId": 16,
+        "stageId": 29,
+        "stName": "检察监督"
+      },
+      {
+        "emId": 74,
+        "emName": "申请立案",
+        "tsId": 16,
+        "stageId": 29,
+        "stName": "检察监督"
+      },
+      {
+        "emId": 22,
+        "emName": "代理案件调查",
+        "tsId": 16,
+        "stageId": 29,
+        "stName": "检察监督"
+      }
+    ],
+    "Agent": [
+      {
+        "BranchId": 6923,
+        "BranchName": "宝安分所"
+      },
+      {
+        "BranchId": 4,
+        "BranchName": "北京分所"
+      },
+      {
+        "BranchId": 6548,
+        "BranchName": "长春分所"
+      },
+      {
+        "BranchId": 8,
+        "BranchName": "长沙分所"
+      },
+      {
+        "BranchId": 6588,
+        "BranchName": "潮州分所"
+      },
+      {
+        "BranchId": 6493,
+        "BranchName": "东莞分所"
+      },
+      {
+        "BranchId": 6617,
+        "BranchName": "法通"
+      },
+      {
+        "BranchId": 6,
+        "BranchName": "佛山分所"
+      },
+      {
+        "BranchId": 6911,
+        "BranchName": "福州分所（筹）"
+      },
+      {
+        "BranchId": 6716,
+        "BranchName": "光明分所"
+      },
+      {
+        "BranchId": 3,
+        "BranchName": "广州分所"
+      },
+      {
+        "BranchId": 6711,
+        "BranchName": "贵安新区分所"
+      },
+      {
+        "BranchId": 4446,
+        "BranchName": "哈尔滨分所"
+      },
+      {
+        "BranchId": 6765,
+        "BranchName": "海口分所"
+      },
+      {
+        "BranchId": 7,
+        "BranchName": "杭州分所"
+      },
+      {
+        "BranchId": 1432,
+        "BranchName": "合肥分所"
+      },
+      {
+        "BranchId": 6710,
+        "BranchName": "惠州分所"
+      },
+      {
+        "BranchId": 226,
+        "BranchName": "江门分所"
+      },
+      {
+        "BranchId": 6598,
+        "BranchName": "揭阳分所"
+      },
+      {
+        "BranchId": 6708,
+        "BranchName": "昆明分所"
+      },
+      {
+        "BranchId": 416,
+        "BranchName": "龙岗分所"
+      },
+      {
+        "BranchId": 421,
+        "BranchName": "龙华分所"
+      },
+      {
+        "BranchId": 6626,
+        "BranchName": "梅州分所"
+      },
+      {
+        "BranchId": 6709,
+        "BranchName": "南京分所（筹）"
+      },
+      {
+        "BranchId": 6529,
+        "BranchName": "南宁分所"
+      },
+      {
+        "BranchId": 3437,
+        "BranchName": "坪山分所"
+      },
+      {
+        "BranchId": 403,
+        "BranchName": "前海分所"
+      },
+      {
+        "BranchId": 6900,
+        "BranchName": "青岛分所"
+      },
+      {
+        "BranchId": 6907,
+        "BranchName": "汕头分所"
+      },
+      {
+        "BranchId": 10,
+        "BranchName": "上海分所"
+      },
+      {
+        "BranchId": 2,
+        "BranchName": "深圳总所"
+      },
+      {
+        "BranchId": 5,
+        "BranchName": "天津分所"
+      },
+      {
+        "BranchId": 6915,
+        "BranchName": "武汉分所"
+      },
+      {
+        "BranchId": 6703,
+        "BranchName": "湛江分所"
+      },
+      {
+        "BranchId": 6569,
+        "BranchName": "中山分所"
+      }
+    ],
+    "CS": [
+      {
+        "CSID": 1,
+        "StatusName": "合同履行"
+      },
+      {
+        "CSID": 2,
+        "StatusName": "合同终止"
+      },
+      {
+        "CSID": 3,
+        "StatusName": "合同完成"
+      },
+      {
+        "CSID": 4,
+        "StatusName": "合同无效"
+      },
+      {
+        "CSID": 5,
+        "StatusName": "合同作废"
+      },
+      {
+        "CSID": 6,
+        "StatusName": "合同转委托"
+      },
+      {
+        "CSID": 7,
+        "StatusName": "合同转所"
+      }
+    ],
+    "Csr": [
+      {
+        "SRCID": 1,
+        "SourceName": "单位案源"
+      },
+      {
+        "SRCID": 2,
+        "SourceName": "非单位案源"
+      }
+    ]
+  },
+  "msg": null,
+  "IsSuccess": true
+}

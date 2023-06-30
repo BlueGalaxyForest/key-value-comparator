@@ -1,6 +1,6 @@
 package com.fores.kvcomparator;
 
-import lombok.Data;
+import com.fores.kvcomparator.utils.MyUtils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,16 +9,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
-@Data
-/**
- * 比较响应数据的键值对
- */
-public class FileKeyValueComparator implements KeyValueComparator {
-    private String id;
-    private String path;
-
+public class ResponseKeyValueComparator implements KeyValueComparator{
+    /**
+     * 读取文件
+     * @param path 文件路径
+     * @return
+     */
     public List<String> readFile(String path) {
         BufferedReader reader = null;
         List<String> result = new ArrayList<>();
@@ -26,9 +23,9 @@ public class FileKeyValueComparator implements KeyValueComparator {
             reader = new BufferedReader(new FileReader(path));
             String line;
             while ((line = reader.readLine()) != null) {
-                if (!line.isEmpty()) {  // 跳过空行
-                    result.add(line);
-                }
+                    if(MyUtils.checkLine(new String[]{"{","}","[","]"},line)){
+                        result.add(line);
+                    }
             }
             return result;
         } catch (IOException e) {
@@ -46,13 +43,6 @@ public class FileKeyValueComparator implements KeyValueComparator {
 
     }
 
-    /**
-     * 通过路径指针的文件比较
-     * @param path1 路径1
-     * @param path2 路径2
-     * @param id1 标识1
-     * @param id2 标识2
-     */
     @Override
     public void compare(String path1, String path2, String id1, String id2) {
         List<String> lines1 = readFile(path1);
@@ -61,7 +51,7 @@ public class FileKeyValueComparator implements KeyValueComparator {
         List<String> keys1 = new ArrayList<>();
         List<String> keys2 = new ArrayList<>();
 
-        lines1.stream().forEach(line -> {
+        lines1.stream().forEach(line->{
             String[] split = line.split(":");
             String key = split[0].trim();
 
@@ -71,27 +61,8 @@ public class FileKeyValueComparator implements KeyValueComparator {
                 value = split[1].trim().replaceAll("^\"|\"$", "");
             }
             map1.put(key, value);
+
         });
-
-        lines2.stream().forEach(line -> {
-            String[] split = line.split(":");
-            String key = split[0].trim();
-            keys2.add(key);
-            String value = split[1].trim().replaceAll("^\"|\"$", "");
-
-            String v1 = map1.get(key);
-            if (v1 != null) {
-                if (!v1.equals(value)) {
-                    System.err.println(id1 + " 的 " + key + ":" + v1 + " [VS] " + id2 + " 的 " + key + ":" + value);
-                }
-            }
-        });
-
-        List<String> collect1 = keys1.stream().filter(key -> !keys2.contains(key)).collect(Collectors.toList());
-        System.out.println("<<"+id1+">>" + " 比 " + "<<"+id2+">>" + "多出来的字段:" + collect1);
-
-        List<String> collect2 = keys2.stream().filter(key -> !keys1.contains(key)).collect(Collectors.toList());
-        System.out.println("<<"+id2+">>" + " 比 " + "<<"+id1+">>" + "多出来的字段:" + collect2);
-
+        System.out.println("map1=="+map1);
     }
 }
