@@ -1,0 +1,31 @@
+-----------------------------------------------------------------------------------------
+[more]@ 一般合同的添加按钮做一下
+	1. caseBase绑定事件(ok)
+	2. 主合同编号问题(ok)
+		 var Add = false;//是否有合同编号
+		 if ($.inArray(CTID, MainCTIDs) !== -1 && casexx.ContractNo != null) {
+            Add = true;//主合同有合同编号则可以添加其他合同
+              MainContractNo = casexx.ContractNo;
+               }
+
+		* mainCTIDs是什么=>   var MainCTIDs = [7, 8, 14, 19, 22];//主合同CTID => 写死了的
+		* casexx.ContractNo 是什么	=> var casexx = data.Contract[0];GetContracts?CaseId=;;;合同信息
+	3.  先发送请求(ok)
+	4. 需要弹出层+picker(ok)
+	5. 需要新建页面跳转,点击确认以后跳转=>创建 otherContract 文件夹和 ChangeParty 页面(ok)
+	6. 测试同步2在小程序怎么失败了?=> 他的空串""也算值?=>条件按照PC改为null吧=>完了是壮哥filterNull的问题=>ok
+	7. 测试同步2的补充合同坐下:::
+		1. 创建 supplement 页面(ok)
+		2. 需要根据CTID去跳转(ok)
+		3. 还有个同级的otherContract难搞哦,那不能使用switchCase了(ok)
+		4. 其次发了一些列请求::
+			GetNewAgent?CaseId=171766&IsUnion=0	=>caseId可以拿到 && IsUnion固定为0
+			GetMainAndBGParty?CaseId=171766&SNID=0	=> 如果SNID是0就是添加
+			Get_Assist?CBID=1610	=> caseHub可以获得
+			Supplement.html?v=1688973827412
+			OtherContract.html?v=1688973827412
+
+			* 跳转的时候多携带一些信息 CaseId,IsUnion,SNID,CBID(ok)
+			* CTID是什么鬼??=>添加的时候,CTID就是picker的类型;修改的时候,就是点击的那个CTID
+
+---------------------------------------------------------------------------------------

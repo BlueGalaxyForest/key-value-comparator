@@ -1,38 +1,10 @@
-	Brief: 民事>第一部分 人格权纠纷>一、人格权纠纷>1.生命权/身体权/健康权纠纷
-ContractNo:
-Sealer:
-SaveTime: 1900-01-01
-CSID: 1
-CloseDate: 1900-01-01
-Foreign: 1
-SRCID: 2
-InvolvedMoney: 1
-AgencyFee: 2
-CmId: 5
-AgencyFeeRemark:
-Agreement:
-Remarks:
-RelatedIdentity: 31,22,16
-PartyType: 1,1,2
-PiId: 381160,394535,381157
-PRID: 515194,515195,515196
-EntrustedMatters: 81-37,95-23,87-92,15-37,93-74,93-114,93-29,89-81,31-73,31-88,31-118,2-37,8-74,7-89,92-89,92-120,21-89,29-89,29-123,29-22
-UserId: 1816,14672
-BranchId: 6688,6619
-HandlingStage: 0-81
-Matter: 2,3-1
-HcId: 1,3
-HiId: 377446,0
-Hpermit: 0,1
-PCSID:
-PCSpartyId:
-PCSSignDate:
-AgentID: 168080,168081
-AgentType: 1,2
-AgentBranchId: 4,6923
-AgentContractSignDate: ,
-TransferOut: 0,0
-CTID: 7
-SNID: 168024
-CaseId: 176716
-CBID: 18
+// 跟进
+ReturnTime: 2023-07-21
+ReturnUID: 1816
+Sendee: 14672
+LR: 2
+SNIDs: 172897
+IDs: 156705
+Borrower: 0
+Lender: 0
+edit: 0

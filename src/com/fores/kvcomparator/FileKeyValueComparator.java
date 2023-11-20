@@ -26,7 +26,7 @@ public class FileKeyValueComparator implements KeyValueComparator {
             reader = new BufferedReader(new FileReader(path));
             String line;
             while ((line = reader.readLine()) != null) {
-                if (!line.isEmpty()) {  // 跳过空行
+                if (!line.isEmpty() && !line.contains("//")) {  // 跳过空行和单行注释
                     result.add(line);
                 }
             }
@@ -77,7 +77,11 @@ public class FileKeyValueComparator implements KeyValueComparator {
             String[] split = line.split(":");
             String key = split[0].trim();
             keys2.add(key);
-            String value = split[1].trim().replaceAll("^\"|\"$", "");
+            String value = "";
+            if (split.length>1){    //java对于"AgentContractSignDate:"只会产生一个元素的数组,和JS不同
+                value = split[1].trim().replaceAll("^\"|\"$", "");
+            }
+
 
             String v1 = map1.get(key);
             if (v1 != null) {
