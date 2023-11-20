@@ -1,5 +1,6 @@
-package com.fores.kvcomparator;
+package com.fores.kvcomparator.kv;
 
+import com.fores.kvcomparator.kv.IKeyValueComparator;
 import lombok.Data;
 
 import java.io.BufferedReader;
@@ -15,7 +16,7 @@ import java.util.stream.Collectors;
 /**
  * 比较响应数据的键值对
  */
-public class FileKeyValueComparator implements KeyValueComparator {
+public class FileKeyValueComparator implements IKeyValueComparator {
     private String id;
     private String path;
 
