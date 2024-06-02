@@ -1,36 +1,36 @@
-CBID: 18
-Foreign: 0
-Minors: 1
-SRCID: 2
-Agreement: 合同约定123
-InvolvedMoney: 涉案标的123
-AgencyFee: 律师费123
-CmId: 0
-AgencyFeeRemark: 律师费约定123
-Remarks: 2023/12/1_18:01_测试民事添加案件
-partyName: 测试,测试合作业务,测试PC的出借测试,测试6688
-RelatedIdentity: 31,31,2,2
-PartyType: 1,1,2,2
-PiId: 431154,408284,408701,429638
-PRID: 0,0,0,0
-EntrustedMatters: 81-37,95-23,87-92,15-37,15-47,15-104,15-93
-UserId: 15259,15245,2045,2045,14672
-BranchId: 6617,2,186,71,6619
-HandlingStage: 0-0-81,95,87,15-81,95,87,15-81,95,87,15
-Matter: 1,2-15,16-1,2-15,16-1,2
-HcId: 1,1,2,2,3
-HiId: 0,0,0,0,0
-Hpermit: 1,1,0,0,1
-AgentID: 0,0,0
-AgentType: 1,2,2
-AgentBranchId: 6617,6923,4
-AgentContractSignDate: ,,
-TransferOut: 0,0,0
-CFeeID: 1
-CTID: 7
-SNID: 0
-BTID: 2
-CaseId: 0
-CSID: 1
-TsID: 0
-ApprovalModify: 0
+
+	ATID: "369"
+	ArchiveDate[0]: "0"
+	CIID: "0"
+	FileId: ""
+	PFPaymentBase: 2366
+	PFSocialSecurityNumber: "123456789"
+	PFStartingMonth: "2024-07-01"
+	PFUnitPayer: 100021
+	PFUserId: "1816"
+	PFhjqk: "非深户城镇"
+	PFhyzk: "已婚"
+	PFsfzh: "440981199109246626"
+	PFsjhm: "13546461313"
+	PFsqrxm: "测试同步"
+	PFxl: "其他"
+	PFzc: "初级职称"
+	adId: 0
+	approveBId: "27"
+	branchId: "27"
+	caseId: "0"
+	caseId[0]: "0"
+	content: "<h3>申请购买公积金</h3>申请人姓名：测试同步<br/>身份证号：440981199109246626<br/>社保电脑号：123456789<br/>手机号码：13546461313<br/>户籍情况：非深户城镇<br/>学历：其他<br/>职称：初级职称<br/>公积金缴费基数：2366<br/>公积金起始月份：2024年7月<br/>单位承担部分由何伟森（深圳总所）（申请人/律师团队/部门/分所）支付;个人承担部分从申请人工资中扣除。<br/>婚姻状况：已婚，配偶姓名：测试1，配偶证件号码：1234567。<br/>联名卡所属银行：中国银行<br/>联名卡卡号：123456789"
+	costBearing: ""
+	gjjgmlb: "1"
+	lmkh: "123456789"
+	lmyh: "中国银行"
+	providentFund: "1"
+	sealCategory: "3"
+	spbmID: ""
+	title: "测试,请忽略"
+	tmplId: "29"
+	typeName: "财务事务>工资/社保/公积金>申请购买社保/公积金"
+	type[1]: "2"
+	userId: "1816"
+	
